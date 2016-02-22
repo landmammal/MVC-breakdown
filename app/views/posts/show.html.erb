@@ -1,0 +1,7 @@
+    <h1><%= @post.title  %></h1>
+    <p>  <!--  html tags wrap around our ruby code -->
+      <%= @post.body %>    <!--  gets the specific post found at taht params id . body or .title will display all the collums you have created for this object in the db        -->
+    </p>
+
+    <!--  link to method     the display link     the destination gotten from rake routes  the class to target when styling-->
+    <%= link_to 'back to index of posts', root_path, class:"back_boton" %>
