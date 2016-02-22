@@ -1,7 +1,9 @@
 <h1>hello world</h1>
-
+    <!--  itirates over all instances of the @posts variable that all the posts are been stored in in the controler-->
 <%= @posts.each do |p| %>
+    <!--  calls link_to method and the two argumenst pass to it is the name that will become a link .. the route to that link and the class to style it -->
   <%= link_to p.title, post_path(p), class: "title" %> <br>
+<!--          p.title calls the column title store in this objects and renders it for each objects instance is passing by  -->
 
 <% end %>
 
